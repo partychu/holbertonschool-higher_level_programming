@@ -1,1 +1,2 @@
-import ggez
+#!/usr/bin/python3
+__import__ ("ggez")
