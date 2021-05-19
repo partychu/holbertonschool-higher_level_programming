@@ -17,15 +17,16 @@ class Square:
         """ Method to print square """
         if self.size is 0:
             print()
-        for i in range(0, self.position[1]):
-            print()
-        for x in range(self.size):
-            for y in range(self.size):
-                if y == 0:
-                    for i in range(self.position[0]):
-                        print(" ", end="")
-                print("#", end="")
-            print()
+        else:
+            for i in range(0, self.position[1]):
+                print()
+            for x in range(self.size):
+                for y in range(self.size):
+                    if y == 0:
+                        for i in range(self.position[0]):
+                            print(" ", end="")
+                    print("#", end="")
+                print()
 
     @property
     def size(self):
