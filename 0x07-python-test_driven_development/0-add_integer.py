@@ -4,6 +4,8 @@ add_integer - Function that adds 2 integers or floats
 Parameters: a, b
 Returns an integer
 """
+
+
 def add_integer(a, b=98):
     """
     Adds 2 integers or floats

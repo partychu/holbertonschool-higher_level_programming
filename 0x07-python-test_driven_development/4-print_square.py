@@ -3,6 +3,8 @@
 print_square - prints a square with the # character
 Parameters: size
 """
+
+
 def print_square(size):
     """
     Prints a square
