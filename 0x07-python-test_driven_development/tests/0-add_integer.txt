@@ -42,3 +42,13 @@
 	>>> add_integer()
 	Traceback (most recent call last):
 	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+=== Test 10 ===
+	>>> add_integer(float('inf'), 2)
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+=== Test 11 ===
+	>>> add_integer(float('NaN'), 2)
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
