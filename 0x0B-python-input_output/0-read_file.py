@@ -1,14 +1,14 @@
 #!/usr/bin/python
 """
-
-read_file
+read_file - reads a text file
+filename: file to read
 
 """
 
 
 def read_file(filename=""):
     """
-    appends a string at end of file, returns number of characters written
+    reads txt in UTF8 and prints to stdout
     """
     with open(filename, encoding='UTF8') as f:
         for line in f:
