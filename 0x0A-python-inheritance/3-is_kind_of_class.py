@@ -3,6 +3,7 @@
 is_kind_of_class
 """
 
+
 def is_kind_of_class(obj, a_class):
     """
     Returns True is obj is an instance or an instance
