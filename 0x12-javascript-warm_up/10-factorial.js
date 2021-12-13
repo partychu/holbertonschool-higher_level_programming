@@ -1,13 +1,13 @@
 #!/usr/bin/node
 
-const arg = process.argv.slice(2);
+const args = process.argv.slice(2);
 
 function factorial (n) {
-  if (isNaN(n) || n === 0 || n === 1) {
+  if (isNaN(n)) {
     return (1);
   } else {
     return (n * factorial(n - 1));
   }
 }
 
-console.log(factorial(arg[0]));
+console.log(factorial(args));
