@@ -1,7 +1,18 @@
 #include "lists.h"
 
+/**
+ * check_cycle
+ * @list: list to check
+ *
+ * Return: return 0 for no cycle, 1 for cycle
+ *
+ */
+
 int check_cycle(listint_t *list)
 {
+	if (!list)
+		return NULL;
+
 	listint_t *p1 = list;
 	listint_t *p2 = list;
 
