@@ -10,9 +10,6 @@
 
 int check_cycle(listint_t *list)
 {
-	if (!list)
-		return NULL;
-
 	listint_t *p1 = list;
 	listint_t *p2 = list;
 
