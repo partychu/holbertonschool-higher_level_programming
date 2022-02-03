@@ -4,13 +4,15 @@ const request = require('request');
 
 request(myArgs[0], function (error, response, body) {
   if (error) console.error('error:', error);
-  const obj = JSON.parse(body);
+  const todo = JSON.parse(body);
   const result = {};
-  for (const todo of obj) {
-    if (todo.completed) {
-      if (result[todo.userId]) { result[todo.userId]++; }
-    } else {
-      result[todo.userId] = 1;
+  for (const t of todo) {
+    if (t.completed) {
+      if (result[t.userId] === undefined) {
+        result[t.userId] = 1;
+      } else {
+        result[t.userId] += 1;
+      }
     }
   }
   console.log(result);
